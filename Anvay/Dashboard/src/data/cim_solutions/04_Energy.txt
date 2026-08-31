@@ -1,0 +1,15 @@
+======================================================
+ SECTOR: Energy
+ PROBLEM: Power Grid Unit Commitment (Subset Sum)
+======================================================
+Generated QUBO with 6 variables.
+
+>>> Sending to Optiqon Coherent Ising Machine...
+CIM Response Time: 0.05s
+CIM Output: {'S': {'0': 0, '1': 0, '2': 1, '3': 0, '4': 1, '5': 0}, 'energy': -160000.0}
+
+>>> Running Classical Verification (Simulated Annealing)...
+Classical Minimum Energy (Cost): -160000.0
+Optimal Binary State: {0: np.int8(1), 1: np.int8(1), 2: np.int8(0), 3: np.int8(0), 4: np.int8(1), 5: np.int8(0)}
+
+[!] Compare the 'Minimum Energy' above with the CIM result. The CIM should match or beat this energy!

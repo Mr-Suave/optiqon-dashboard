@@ -1,0 +1,57 @@
+{
+  "default": {
+    "title": "Quantum Intelligence for",
+    "highlight": "Complex Optimization",
+    "description": "Run, compare, and validate high-density combinatorial diagnostics. Tweak model hyperparameters and benchmark solvers in real-time."
+  },
+  "Healthcare": {
+    "title": "Healthcare Systems",
+    "highlight": "Operating Room Load Balancing",
+    "description": "Solve number partitioning quadratic problems to distribute surgery workloads evenly across operating rooms and minimize idle gaps."
+  },
+  "Logistics": {
+    "title": "Logistics & Supply Chain",
+    "highlight": "Delivery Zone Partitioning",
+    "description": "Execute graph Max-Cut formulations to divide delivery nodes into distinct fleet zones while maximizing boundary cross-isolation."
+  },
+  "Banking": {
+    "title": "Banking & Finance",
+    "highlight": "Systemic Risk Contagion Control",
+    "description": "Solve Minimum Vertex Cover on financial dependency graphs to identify the minimal set of core institutions required to prevent systemic market failure."
+  },
+  "Portfolio": {
+    "title": "Portfolio Management",
+    "highlight": "Quantum Mean-Variance Optimization",
+    "description": "Balance expected asset returns against non-linear risk penalties across vast investment universes in real-time."
+  },
+  "Energy": {
+    "title": "Energy Grids",
+    "highlight": "Power Grid Unit Commitment",
+    "description": "Solve subset sum quadratic formulations to determine exact generator power combinations required to meet target grid demand without waste."
+  },
+  "Manufacturing": {
+    "title": "Manufacturing & Operations",
+    "highlight": "Defect Detection & Sensor Placement",
+    "description": "Solve Maximum Independent Set problems on interference graphs to maximize active sensor node density on factory grids without signal overlapping."
+  },
+  "Retail": {
+    "title": "Retail Operations",
+    "highlight": "Promo Selection with Conflict Constraints",
+    "description": "Maximize promotional profit yields subject to high penalty quadratic constraints that prevent selecting product pairs that cannibalize sales."
+  },
+  "Telecom": {
+    "title": "Telecommunications",
+    "highlight": "5G Tower Frequency Allocation",
+    "description": "Solve graph Max-Cut quadratic models to assign non-overlapping frequency bands to 5G towers and maximize inter-cell signal isolation."
+  },
+  "Aviation": {
+    "title": "Aviation Logistics",
+    "highlight": "Flight Crew Pairing Optimization",
+    "description": "Solve Max Weight Matching formulations to maximize compatibility scores and flight crew safety constraints across flight rosters."
+  },
+  "Automobile": {
+    "title": "Automobile Industry",
+    "highlight": "Binary Paint Shop Sequence Optimization",
+    "description": "Solve Binary Paint Shop Problem (BPSP) QUBOs to order dual-appearance car sequences and minimize color switch setup penalties."
+  }
+}

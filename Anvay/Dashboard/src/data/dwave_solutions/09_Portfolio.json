@@ -1,0 +1,74 @@
+{
+    "results": [
+        {
+            "gamma": 0.1,
+            "port_ret": 0.5249122688081612,
+            "port_std": 0.23066444632744107,
+            "sharpe": 2.275653128020514,
+            "qpu_access_time_ms": 103.099,
+            "wall_time_s": 5.178433418273926,
+            "allocation": {
+                "AUBANK.NS": 1,
+                "BHARATFORG.NS": 1,
+                "CANBK.NS": 1,
+                "CUMMINSIND.NS": 1,
+                "GLENMARK.NS": 1,
+                "HFCL.NS": 3,
+                "HINDCOPPER.NS": 3,
+                "IPCALAB.NS": 1,
+                "LTF.NS": 1,
+                "POLYCAB.NS": 1,
+                "TORNTPHARM.NS": 1
+            },
+            "energy": -6.676547079132028
+        },
+        {
+            "gamma": 1.0,
+            "port_ret": 0.23088272709544783,
+            "port_std": 0.133823893796396,
+            "sharpe": 1.7252728234519934,
+            "qpu_access_time_ms": 103.672,
+            "wall_time_s": 5.1743083000183105,
+            "allocation": {
+                "AUBANK.NS": 1,
+                "CUMMINSIND.NS": 1,
+                "HINDCOPPER.NS": 1,
+                "IPCALAB.NS": 1,
+                "MARICO.NS": 1,
+                "MAXHEALTH.NS": 1,
+                "OIL.NS": 1,
+                "PHOENIXLTD.NS": 1,
+                "PVRINOX.NS": 1,
+                "STARHEALTH.NS": 1,
+                "TATACOMM.NS": 1,
+                "TORNTPHARM.NS": 2,
+                "TRITURBINE.NS": 2
+            },
+            "energy": 0.566246867505015
+        },
+        {
+            "gamma": 5.0,
+            "port_ret": 0.04816961586987641,
+            "port_std": 0.10740869751045726,
+            "sharpe": 0.4484703472471272,
+            "qpu_access_time_ms": 103.705,
+            "wall_time_s": 5.817718267440796,
+            "allocation": {
+                "3MINDIA.NS": 1,
+                "ACC.NS": 1,
+                "CUMMINSIND.NS": 1,
+                "IPCALAB.NS": 1,
+                "IRB.NS": 1,
+                "LUPIN.NS": 2,
+                "MARICO.NS": 1,
+                "OIL.NS": 1,
+                "PAGEIND.NS": 1,
+                "STARHEALTH.NS": 1,
+                "THERMAX.NS": 1,
+                "TORNTPHARM.NS": 1,
+                "UBL.NS": 2
+            },
+            "energy": 12.256162600456264
+        }
+    ]
+}

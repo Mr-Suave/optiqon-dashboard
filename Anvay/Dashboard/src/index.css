@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Teknaf Regular';
+  src: url('/fonts/TeknafRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  /* Glaido Brand Tokens */
+  --bg-primary: #000000;
+  --bg-secondary: #121212;
+  --bg-panel: rgba(40, 40, 40, 0.4);
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #99A1AF;
+  
+  --accent-neon: #BFF549;
+  --accent-neon-hover: #aae03b;
+  
+  /* Glassmorphism effects */
+  --panel-border: 1px solid rgba(255, 255, 255, 0.1);
+  --panel-blur: blur(12px);
+  
+  /* Layout */
+  --sidebar-width: 280px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Teknaf Regular', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* Glassmorphism Panel Utility */
+.glass-panel {
+  background: var(--bg-panel);
+  backdrop-filter: var(--panel-blur);
+  -webkit-backdrop-filter: var(--panel-blur);
+  border: var(--panel-border);
+  border-radius: 16px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent-neon);
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  width: 240px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(191, 245, 73, 0.4) 0px 0px 40px -10px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-neon-hover);
+  transform: translateY(-2px);
+  box-shadow: rgba(191, 245, 73, 0.6) 0px 0px 60px -5px;
+}
+
+/* Glowing text utility */
+.text-glow {
+  color: var(--accent-neon);
+  text-shadow: 0 0 20px rgba(191, 245, 73, 0.4);
+}

@@ -1,0 +1,30 @@
+{
+    "problem": "01_Healthcare",
+    "variables": 8,
+    "hardware": "D-Wave QPU",
+    "info": {
+        "surgery_durations": [
+            45,
+            30,
+            90,
+            60,
+            120,
+            15,
+            45,
+            60
+        ]
+    },
+    "response_time_s": 1.0,
+    "minimum_energy": -216000.0,
+    "optimal_state": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 0
+    },
+    "status": "Success"
+}

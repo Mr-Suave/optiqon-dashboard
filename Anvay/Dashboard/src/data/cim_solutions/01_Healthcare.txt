@@ -1,0 +1,15 @@
+======================================================
+ SECTOR: Healthcare
+ PROBLEM: Operating Room Load Balancing (Number Partitioning)
+======================================================
+Generated QUBO with 8 variables.
+
+>>> Sending to Optiqon Coherent Ising Machine...
+CIM Response Time: 0.05s
+CIM Output: {'S': {'0': 1, '1': 1, '2': 0, '3': 1, '4': 0, '5': 0, '6': 1, '7': 1}, 'energy': -216000.0}
+
+>>> Running Classical Verification (Simulated Annealing)...
+Classical Minimum Energy (Cost): -216000.0
+Optimal Binary State: {0: np.int8(1), 1: np.int8(1), 2: np.int8(0), 3: np.int8(0), 4: np.int8(1), 5: np.int8(0), 6: np.int8(1), 7: np.int8(0)}
+
+[!] Compare the 'Minimum Energy' above with the CIM result. The CIM should match or beat this energy!

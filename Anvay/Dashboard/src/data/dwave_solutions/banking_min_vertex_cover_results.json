@@ -1,0 +1,42 @@
+{
+    "problem": "Banking - Systemic Risk Contagion (Min Vertex Cover)",
+    "variables": 6,
+    "edges": [
+        [
+            0,
+            1
+        ],
+        [
+            1,
+            2
+        ],
+        [
+            2,
+            3
+        ],
+        [
+            3,
+            0
+        ],
+        [
+            0,
+            4
+        ],
+        [
+            4,
+            5
+        ]
+    ],
+    "hardware": "D-Wave QPU",
+    "response_time_s": 0.19,
+    "minimum_energy": -9.0,
+    "optimal_state": {
+        "1": 0,
+        "3": 0,
+        "4": 1,
+        "5": 0,
+        "2": 1,
+        "0": 1
+    },
+    "status": "Success"
+}

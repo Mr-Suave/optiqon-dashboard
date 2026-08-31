@@ -1,0 +1,15 @@
+======================================================
+ SECTOR: Retail
+ PROBLEM: Promo Selection with Conflicts (Constrained Optimization)
+======================================================
+Generated QUBO with 6 variables.
+
+>>> Sending to Optiqon Coherent Ising Machine...
+CIM Response Time: 0.05s
+CIM Output: {'S': {'0': 0, '1': 1, '2': 0, '3': 1, '4': 0, '5': 1}, 'energy': -47.0}
+
+>>> Running Classical Verification (Simulated Annealing)...
+Classical Minimum Energy (Cost): -47.0
+Optimal Binary State: {0: np.int8(0), 1: np.int8(1), 2: np.int8(0), 3: np.int8(1), 4: np.int8(0), 5: np.int8(1)}
+
+[!] Compare the 'Minimum Energy' above with the CIM result. The CIM should match or beat this energy!

@@ -1,0 +1,27 @@
+{
+    "problem": "04_Energy",
+    "variables": 6,
+    "hardware": "D-Wave QPU",
+    "info": {
+        "P_gen": [
+            50,
+            100,
+            150,
+            200,
+            250,
+            300
+        ],
+        "Target_Demand": 400
+    },
+    "response_time_s": 0.16,
+    "minimum_energy": -160000.0,
+    "optimal_state": {
+        "0": 1,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 0
+    },
+    "status": "Success"
+}

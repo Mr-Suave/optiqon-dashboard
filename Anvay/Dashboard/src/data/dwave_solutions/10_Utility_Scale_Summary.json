@@ -1,0 +1,9 @@
+{
+    "problem": "Utility Scale Massive Network Partitioning",
+    "variables": 10000,
+    "edges": 29991,
+    "hardware": "D-Wave Leap Hybrid Solver",
+    "response_time_s": 7.29,
+    "minimum_energy": -23596.0,
+    "status": "Success"
+}
