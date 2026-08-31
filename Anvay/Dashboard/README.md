@@ -1,32 +1,42 @@
-# React + TypeScript + Vite
+# Optiqon
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Optiqon is a dashboard for comparing how different types of computers solve the same optimization problem.
 
-Currently, two official plugins are available:
+It takes real-world scheduling and planning problems from a handful of industries (healthcare, logistics, banking, energy, and more) and shows how three different solvers tackle each one:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Optiqon CIM** — a coherent Ising machine solver
+- **D-Wave Advantage** — a quantum annealing solver (real QPU hardware)
+- **Classical CPU** — a traditional computer running the same problem for comparison
 
-## React Compiler
+## What it does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Pick a sector** — Healthcare, Logistics, Banking, Energy, Manufacturing, Retail, Telecom, or Aviation. Each sector comes with its own real optimization problem (for example, Healthcare is about scheduling surgeries efficiently).
+2. **View the results** — for each solver, the dashboard shows:
+   - The **minimum energy** found (lower is generally better — it represents how good the solution is)
+   - The **status** of the run (success, error, etc.)
+   - The **qubit/variable state** — which variables the solver turned "on" (1) or "off" (0) to reach its answer
+3. **Compare side-by-side** — since different solvers can arrive at different but equally valid solutions, you can visually compare how each one "chose" to solve the same problem.
+4. **Tune the problem** — there's a "Risk Penalty (Gamma)" slider that lets you adjust how the problem itself is formulated before re-running it.
 
-## Expanding the Oxlint configuration
+## How data loads
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+The app tries to fetch live results from a local backend server (`http://localhost:8000`). If no backend is running, it automatically falls back to pre-computed result files bundled with the app, so the dashboard still works and shows real results without needing a server running.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Running it
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+This starts the Vite dev server. Open the printed local URL in your browser to view the dashboard.
+
+## Project structure (high level)
+
+- `src/App.tsx` — main dashboard UI: sector selection, hyperparameter panel, results display
+- `src/sectors.json` — display text (titles/descriptions) shown per sector
+- `src/data/` — pre-computed solution files per solver (`cim_solutions/`, `dwave_solutions/`, `classical_solutions/`), used as the offline fallback
+
+---
+
+Built with React, TypeScript, and Vite.
