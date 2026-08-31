@@ -159,7 +159,7 @@ const fetchResults = async (sectorName: string | null) => {
     : sectorData.default;
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', overflowX: 'hidden'  }}>
       {/* Responsive Styles Injected */}
       <style>{`
         @media (max-width: 992px) {
@@ -254,7 +254,7 @@ const fetchResults = async (sectorName: string | null) => {
       <main className="app-main" style={{ flex: 1, padding: '80px 48px', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
         
         {/* Ambient background glow (Soft faint green oval behind title) */}
-        <div style={{ position: 'absolute', top: '15%', left: '50%', transform: 'translateX(-50%)', width: '900px', height: '300px', background: 'var(--accent-neon)', filter: 'blur(150px)', opacity: '0.15', borderRadius: '50%', pointerEvents: 'none', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', top: '15%', left: '50%', transform: 'translateX(-50%)', width: '900px', maxWidth: '100vw', height: '300px', background: 'var(--accent-neon)', filter: 'blur(150px)', opacity: '0.15', borderRadius: '50%', pointerEvents: 'none', zIndex: 0 }}></div>
 
         {/* Hero Section */}
         <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', maxWidth: '900px', marginBottom: '72px' }}>
